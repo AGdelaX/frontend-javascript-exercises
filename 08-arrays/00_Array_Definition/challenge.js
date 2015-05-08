@@ -4,13 +4,13 @@ module.exports.newArray = function(a, b, c, d){
 
 
 module.exports.firstAndLast = function(array){
-	array = [arguments];
-	var lastItem = array.length-1;
+	var arg = Array.from(arguments);
 
-	var a = array[0];
-	var b = array[lastItem];
+	var end = arg.length-1;
 
-	array = [a,b];
-	
-	return array;
+	var a = arg[0];
+	var b = arg[end];
+
+	var newArray = [a, b];
+	return newArray;
 };
