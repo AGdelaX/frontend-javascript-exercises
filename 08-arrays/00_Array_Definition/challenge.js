@@ -4,7 +4,7 @@ module.exports.newArray = function(a, b, c, d){
 
 
 module.exports.firstAndLast = function(array){
-	var arg = Array.from(arguments);
+	var arg = Array.prototyp.slice.call(arguments);
 
 	var end = arg.length-1;
 
