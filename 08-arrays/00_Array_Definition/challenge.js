@@ -2,12 +2,13 @@ module.exports.newArray = function(a, b, c, d){
 	return [a, b, c, d];
 };
 
-module.exports.firstAndLast = function(){
-	var a = arguments[0];
-	var lastIndex = arguments.length-1;
-	var b = arguments[lastIndex];
-	var array = [];
-	array.push(b);
-	array.unshift(a);
-	return array;
+module.exports.firstAndLast = function([input]){
+	var array = [input];
+	var lastElementIndex= array.length-1;
+
+	var a = array[0];
+	var b = array[lastElementIndex];
+	var newArray = [a, b];
+	
+	return newArray;
 };
