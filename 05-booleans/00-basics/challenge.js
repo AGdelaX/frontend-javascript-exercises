@@ -11,7 +11,8 @@ module.exports.inBetween = function(lower, middle, upper) {
 };
 
 module.exports.outsideRanges = function(number) {
-	return (number < 7) || (number <= 42) || (10>number&&number>20);
+	return (number < 7) && (number <= 42) && (10>number&&number>20);
+
 };
 
 module.exports.nameAndPrice = function(name, price) {
