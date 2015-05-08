@@ -6,15 +6,16 @@ module.exports.firstAndLast = function(a, b, c, d){
 	var argumentsArray = [a,b,c,d];
 	var array = [1, 2];
 	array[0]= a;
-	var end=argumentsArray.length-1;
+
+	var end= argumentsArray.length-1;
 
 	if (argumentsArray[end]===undefined){
 		argumentsArray.pop;
-		end= argumentsArray.length-1;
+		end = argumentsArray.length-1;
 		array[1]=argumentsArray[end];
 	} 
 	else {
-		array[2]=array.length-1;
+		array[1]=argumentsArray[end];
 	}
 	return array;
 };
