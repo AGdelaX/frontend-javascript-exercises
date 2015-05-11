@@ -1,9 +1,7 @@
 module.exports.stream = function(conditionFn, actionFn){
-	var i = 0;
-	while (i < 11){
-		conditionFn == true;
-		actionFn;
-		i ++;
+
+	while (conditionFn()){
+		actionFn();
 	}
 };
 
@@ -16,4 +14,3 @@ module.exports.sumNumbers = function(array){
 	}
 	return sum;
 };
-
